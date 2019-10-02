@@ -14,15 +14,6 @@ function App() {
       </header>
       </div>
 
-
-      <div className="App-header">
-      <header id="head">
-      <h1>SCE Officers</h1>
-      <p>Officers and Associates of SCE</p>
-      <body> body </body>
-      </header>
-      </div>
-
     </div>
 
   );
