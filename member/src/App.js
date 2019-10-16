@@ -1,5 +1,7 @@
+
 import React from 'react';
 import './App.css';
+import { Button, ButtonToolbar } from 'react-bootstrap';
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       </header>
       </div>
 
+<<<<<<< HEAD
       <div className="tab">
         <button class="tablinks" onclick="openCity(event, '2018-2019')">2018-2019</button>
         <button class="tablinks" onclick="openCity(event, '2019-2020')">2019-2020</button>
@@ -27,6 +30,18 @@ function App() {
         <h3>2019-2020</h3>
         <p>Tokyo is the capital of Japan.</p>
       </div>
+=======
+      <ButtonToolbar>
+        <Button variant="outline-primary">Primary</Button>
+        <Button variant="outline-secondary">Secondary</Button>
+        <Button variant="outline-success">Success</Button>
+        <Button variant="outline-warning">Warning</Button>
+        <Button variant="outline-danger">Danger</Button>
+        <Button variant="outline-info">Info</Button>
+        <Button variant="outline-light">Light</Button>
+        <Button variant="outline-dark">Dark</Button>
+      </ButtonToolbar>
+>>>>>>> cd28c93859db9269360355fa7d129380a37ee287
 
     </div>
 
