@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './App.css';
-import { Button, ButtonToolbar } from 'react-bootstrap';
+import { } from 'react-bootstrap';
 
 function App() {
   return (
@@ -9,36 +9,25 @@ function App() {
 
       <div className="App-header">
       <header id="head">
-      <h1>
-        <div className="tab">
-          <button class="tablinks" onclick="openCity(event, '2018-2019')">2018-2019</button>
-          <button class="tablinks" onclick="openCity(event, '2019-2020')">2019-2020</button>
-        </div>
+        <h1>
+          <div className="tab">
+            <button class="tablinks" onclick="openCity(event, '2018-2019')">2018-2019</button>
+            <button class="tablinks" onclick="openCity(event, '2019-2020')">2019-2020</button>
+          </div>
 
-        <div id="year1" class="tabcontent">
-          <h3>2018-2019</h3>
-          <p>Paris is the capital of France.</p>
-        </div>
+          <div id="year1" class="tabcontent">
+            <h3>2018-2019</h3>
+          </div>
 
-        <div id="year2" class="tabcontent">
-          <h3>2019-2020</h3>
-          <p>Tokyo is the capital of Japan.</p>
-        </div>
-      </h1>
-
-      <h2> SCE Officers </h2>
+          <div id="year2" class="tabcontent">
+            <h3>2019-2020</h3>
+          </div>
+        </h1>
+      <h2> Software and Computer Engineering Society Officers </h2>
       <p>Officers and Associates </p>
+
       <body>
-<<<<<<< HEAD
-      <div className="tab">
-        <button class="tablinks" onclick="openCity(event, '2018-2019')">2018-2019</button>
-        <button class="tablinks" onclick="openCity(event, '2019-2020')">2019-2020</button>
-      </div>
-      </body>
-      
-      </header>
-      </div>
-=======
+
         <table class="table">
             <thead>
               <tr>
@@ -73,11 +62,12 @@ function App() {
               </tr>
             </tbody>
         </table>
+
       </body>
+
       </header>
       </div>
 
->>>>>>> a0402ec3fdb5c5bc1d080a47ab20b1ba0a2a6042
     </div>
 
   );

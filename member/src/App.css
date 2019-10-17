@@ -32,8 +32,8 @@
 .tab {
   /* overflow: hidden; */
   border: 1px solid #ccc;
-  background-color: #09d3ac;
-  position: top;
+  background-color: #b2e0df;
+  position: static;
 }
 
 /* Style the buttons that are used to open the tab content */
