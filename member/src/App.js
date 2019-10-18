@@ -2,6 +2,25 @@
 import React from 'react';
 import './App.css';
 import { } from 'react-bootstrap';
+let people = [{name: 'person', lastname: 'one'},
+{name: 'person', lastname: 'two'},
+{name: 'person', lastname: 'three'}
+,{name: 'person', lastname: 'four'}
+,{name: 'person', lastname: 'five'}
+,{name: 'person', lastname: 'six'}
+,{name: 'person', lastname: 'seven'}
+,{name: 'person', lastname: 'eight'}
+,{name: 'person', lastname: 'nine'}
+,{name: 'person', lastname: 'ten'}]
+
+
+function trial(person){
+  return <tr>
+    <th scope="row">1</th>
+    <td>{person.name}</td>
+    <td>{person.lastname}</td>
+  </tr>
+}
 
 function App() {
   return (
@@ -34,32 +53,13 @@ function App() {
                 <th scope="col">#</th>
                 <th scope="col">First</th>
                 <th scope="col">Last</th>
-                <th scope="col">Handle</th>
               </tr>
             </thead>
 
             <tbody>
+                {people.map(person => {return trial(person)})}
 
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
 
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
             </tbody>
         </table>
 
