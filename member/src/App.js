@@ -13,6 +13,7 @@ let people = [{name: 'person', lastname: 'one'},
 ,{name: 'person', lastname: 'nine'}
 ,{name: 'person', lastname: 'ten'}]
 
+[ggg
 
 function trial(person){
   return <tr>
