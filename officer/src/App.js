@@ -8,9 +8,40 @@ import {Button,Row,ButtonToolbar,Col,Container,Table,Navbar,Form,InputGroup,Form
 //import Container from 'react-bootstrap/Container'
 
 
+let people = [
+  {
+    firstname:"Thai",
+    lastname:"Quach",
+    email:"thai.quach@sjsu.edu",
+    uploadpicture:"url",
+    major: "software engineering",
+    linkedin:"thai link",
+    github: "thai",
+  },
+  {
+    firstname:"zach",
+    lastname:"Qu",
+    email:"thai.qua",
+    uploadpicture:"u",
+    major: "engineering",
+    linkedin:"thai link",
+    github: "thai",
+  }
+]
 
-
-
+function display(person) {
+  return (
+  <tr>
+      <td>{person.firstname}</td>
+      <td>{person.lastname}</td>
+      <td>{person.email}</td>
+      <td>{person.uploadpicture}</td>
+      <td>{person.major}</td>
+      <td>{person.linkedin}</td>
+      <td>{person.github}</td>
+    </tr>
+  )
+}
 
 function App() {
   return (
@@ -44,7 +75,7 @@ function App() {
 
 
 
-      <header className="App-header">
+      <header id="App-header">
         <h1>
         Officer Page
         </h1>
@@ -53,33 +84,24 @@ function App() {
 
 
       <Table striped bordered hover variant="dark">
-  <thead>
+
     <tr>
-      <th>#</th>
+
       <th>First Name</th>
       <th>Last Name</th>
-      <th>Username</th>
+      <th>Email</th>
+      <th>Upload Picture</th>
+      <th>Major</th>
+      <th>LinkedIn</th>
+      <th>Github</th>
     </tr>
-  </thead>
+
+
+
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>Nae Nae</td>
-      <td>B</td>
-      <td>@bananar</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>surabhi</td>
-      <td>gupta</td>
-      <td>@dang dude that sucks!!!!</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>seema</td>
-      <td>vora</td>
-      <td>@samsingh</td>
-    </tr>
+{people.map(personValue=>{
+  return display(personValue)
+})}
   </tbody>
 </Table>
 
